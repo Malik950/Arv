@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp7
+namespace ConsoleApp4
 {
-    class shape
+    class Shape
     {
         protected int width;
         protected int height;
 
-        public shape(int w, int h)
+        public Shape(int w, int h)
         {
             this.width = w;
             this.height = h;
@@ -25,7 +25,7 @@ namespace ConsoleApp7
         }
         public int Height
         {
-            get { return width; }
+            get { return height; }
             set { width = value; }
         }
 

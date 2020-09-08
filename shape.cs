@@ -29,6 +29,16 @@ namespace ConsoleApp4
             set { width = value; }
         }
 
+        public int Area
+        {
+
+        }
+
+        public int Circumference
+        {
+
+        }
+
 
     }
 }

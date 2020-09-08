@@ -8,7 +8,10 @@ namespace ConsoleApp4
 {
     class Rectangle : Shape
     {
-        public Rectangle(int w, int h) : base(w, h); 
+        public Rectangle(int w, int h) : base(w, h)
+        {
+
+        } 
 
         
         public int Areacalc()

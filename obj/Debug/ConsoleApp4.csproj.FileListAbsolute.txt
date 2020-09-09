@@ -1,2 +1,9 @@
 C:\Users\Elev\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.csprojAssemblyReference.cache
 C:\Users\Elev\source\repos\ConsoleApp4\ConsoleApp4\obj\Debug\ConsoleApp4.csproj.CoreCompileInputs.cache
+C:\Users\Elev\Desktop\Arv-master\obj\Debug\ConsoleApp4.csprojAssemblyReference.cache
+C:\Users\Elev\Desktop\Arv-master\obj\Debug\ConsoleApp4.csproj.CoreCompileInputs.cache
+C:\Users\Elev\Desktop\Arv-master\bin\Debug\ConsoleApp4.exe.config
+C:\Users\Elev\Desktop\Arv-master\bin\Debug\ConsoleApp4.exe
+C:\Users\Elev\Desktop\Arv-master\bin\Debug\ConsoleApp4.pdb
+C:\Users\Elev\Desktop\Arv-master\obj\Debug\ConsoleApp4.exe
+C:\Users\Elev\Desktop\Arv-master\obj\Debug\ConsoleApp4.pdb

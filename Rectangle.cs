@@ -8,15 +8,15 @@ namespace ConsoleApp4
 {
     class Rectangle : Shape
     {
-        public Rectangle(int w, int h) : base(w, h)
+        public Rectangle(double w, double h) : base(w, h)
         {
 
         } 
 
         
-        public int Areacalc()
+        public double Areacalc()
         {
-            int area = width * height;
+            double area = width * height;
 
             return area;
         }

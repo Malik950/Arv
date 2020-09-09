@@ -9,17 +9,26 @@ namespace ConsoleApp4
     class Triangle : Shape
     {
          
-        public Triangle(int w, int h) : base(w, h)
+        public Triangle(double w, double h) : base(w, h)
         {
 
         }
 
 
-        public int Areacalc()
+        public double Areacalc()
         {
-            int area = width * height;
+            double area = (width * height)/ 2;
 
             return area;
         }
+
+        public double            TriangelOmkrets()
+        {
+            double PowHypotenusa = (width * width) + (height * height);
+            double Hypotenusa = Math.Sqrt(PowHypotenusa);
+            double Omkrets = width + height + Hypotenusa;
+            return Omkrets;
+        }
+
     }
 }

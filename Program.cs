@@ -18,10 +18,10 @@ namespace ConsoleApp4
             {
                 case "1":
                     Console.WriteLine("insert width");
-                    int width = int.Parse(Console.ReadLine());
+                    double width = double.Parse(Console.ReadLine());
 
                     Console.WriteLine("insert height");
-                    int height = int.Parse(Console.ReadLine());
+                    double height = double.Parse(Console.ReadLine());
 
                     var instance = new Rectangle(width, height);
 
@@ -36,14 +36,15 @@ namespace ConsoleApp4
 
                 case "2":
                     Console.WriteLine("insert width: ");
-                    width = int.Parse(Console.ReadLine());
+                    width = double.Parse(Console.ReadLine());
 
                     Console.WriteLine("insert height");
-                    height = int.Parse(Console.ReadLine());
+                    height = double.Parse(Console.ReadLine());
 
                     var area = new Triangle(width, height);
 
                     Console.WriteLine("area: " + area.Areacalc());
+                    Console.WriteLine("Omkrets: " + area.TriangelOmkrets());        
                     
 
                     Console.ReadKey();

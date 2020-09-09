@@ -8,37 +8,38 @@ namespace ConsoleApp4
 {
     class Shape
     {
-        protected int width;
-        protected int height;
+        protected double width;
+        protected double height;
 
-        public Shape(int w, int h)
+        public Shape(double w, double h)
         {
             this.width = w;
             this.height = h;
         }
 
-        public int Width
+        public double Width
         {
             get { return width; }
             set { width = value; }
 
         }
-        public int Height
+        public double Height
         {
             get { return height; }
             set { width = value; }
         }
 
-        public int Area
+        public double TriangelOmkrets()
         {
+            double PowHypotenusa = (width * width) + (height * height);
+            double Hypotenusa = Math.Sqrt(PowHypotenusa);
+            double Omkrets = width + height + Hypotenusa;
+            return Omkrets;
+
+
+
+
+
 
         }
-
-        public int Circumference
-        {
-
-        }
-
-
-    }
 }

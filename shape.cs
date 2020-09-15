@@ -19,27 +19,26 @@ namespace ConsoleApp4
 
         public double Width
         {
-            get { return width; }
-            set { width = value; }
+            get;
+            set;
 
         }
         public double Height
         {
-            get { return height; }
-            set { width = value; }
+            get;
+            set;
         }
 
-        public double TriangelOmkrets()
+        public virtual void Area()
         {
-            double PowHypotenusa = (width * width) + (height * height);
-            double Hypotenusa = Math.Sqrt(PowHypotenusa);
-            double Omkrets = width + height + Hypotenusa;
-            return Omkrets;
-
-
-
-
-
-
+            return  0;
         }
-}
+
+        public virtual void Circumference()
+        {
+            return  0;
+        }
+        
+    }
+
+ }

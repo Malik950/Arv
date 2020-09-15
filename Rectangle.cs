@@ -20,6 +20,12 @@ namespace ConsoleApp4
 
             return area;
         }
+
+        public double RectangelOmkrets()
+        {
+            double Omkrets = width + width + height + height;
+            return Omkrets;
+        }
     }
 
     

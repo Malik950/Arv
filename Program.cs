@@ -26,6 +26,10 @@ namespace ConsoleApp4
                     var instance = new Rectangle(width, height);
 
                     Console.WriteLine("area: " + instance.Areacalc());
+
+                    Console.WriteLine("omkrets: " + instance.RectangelOmkrets());
+
+
                     
 
                     Console.ReadKey();

@@ -6,22 +6,24 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp4
 {
-    class Rectangle : Shape
+    class Rectangle : IShape
     {
-        public Rectangle(double w, double h) : base(w, h)
+        double width, height;
+        public Rectangle(double w, double h) 
         {
-
+            height = h;
+            width = w;
         } 
 
         
-        public double Areacalc()
+        public double Area()
         {
             double area = width * height;
 
             return area;
         }
 
-        public double RectangelOmkrets()
+        public double Omkrets()
         {
             double Omkrets = width + width + height + height;
             return Omkrets;

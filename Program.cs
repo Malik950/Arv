@@ -25,9 +25,9 @@ namespace ConsoleApp4
 
                     var instance = new Rectangle(width, height);
 
-                    Console.WriteLine("area: " + instance.Areacalc());
+                    Console.WriteLine("area: " + instance.Area());
 
-                    Console.WriteLine("omkrets: " + instance.RectangelOmkrets());
+                    Console.WriteLine("omkrets: " + instance.Omkrets());
 
 
                     
@@ -47,8 +47,8 @@ namespace ConsoleApp4
 
                     var area = new Triangle(width, height);
 
-                    Console.WriteLine("area: " + area.Areacalc());
-                    Console.WriteLine("Omkrets: " + area.TriangelOmkrets());        
+                    Console.WriteLine("area: " + area.Area());
+                    Console.WriteLine("Omkrets: " + area.Omkrets());        
                     
 
                     Console.ReadKey();

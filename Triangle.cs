@@ -6,23 +6,24 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp4
 {
-    class Triangle : Shape
+    class Triangle : IShape
     {
-         
-        public Triangle(double w, double h) : base(w, h)
+        double width, height;   
+        public Triangle(double w, double h) 
         {
-
+            height = h;
+            width = w;
         }
 
 
-        public double Areacalc()
+        public override double Area()
         {
             double area = (width * height)/ 2;
 
             return area;
         }
 
-        public double            TriangelOmkrets()
+        public  double  Omkrets()
         {
             double PowHypotenusa = (width * width) + (height * height);
             double Hypotenusa = Math.Sqrt(PowHypotenusa);

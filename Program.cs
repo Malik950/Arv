@@ -10,8 +10,11 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
+            IShape obj;
+
             Console.WriteLine("1. Rectangle");
             Console.WriteLine("2. Triangle");
+            Console.WriteLine("3. Circle");
 
             string choice = Console.ReadLine();
             switch (choice)
@@ -23,11 +26,11 @@ namespace ConsoleApp4
                     Console.WriteLine("insert height");
                     double height = double.Parse(Console.ReadLine());
 
-                    var instance = new Rectangle(width, height);
+                    obj = new Rectangle(width, height);
 
-                    Console.WriteLine("area: " + instance.Area());
+                    Console.WriteLine("area: " + obj.Area());
 
-                    Console.WriteLine("omkrets: " + instance.Omkrets());
+                    Console.WriteLine("omkrets: " + obj.Omkrets());
 
 
                     
@@ -45,17 +48,41 @@ namespace ConsoleApp4
                     Console.WriteLine("insert height");
                     height = double.Parse(Console.ReadLine());
 
-                    var area = new Triangle(width, height);
+                    obj = new Triangle(width, height);
 
-                    Console.WriteLine("area: " + area.Area());
-                    Console.WriteLine("Omkrets: " + area.Omkrets());        
-                    
+                    Console.WriteLine("area: " + obj.Area());
+
+                    Console.WriteLine("omkrets: " + obj.Omkrets());
+
 
                     Console.ReadKey();
                     Console.Clear();
                     Main(null);
 
                     break;
+
+                case "3":
+
+                    Console.WriteLine("insert radie: ");
+                    double radie = double.Parse(Console.ReadLine());
+
+                    obj = new Circle(radie);
+
+                    Console.WriteLine("area: " + obj.Area());
+
+                    Console.WriteLine("omkrets: " + obj.Omkrets());
+
+
+                    Console.ReadKey();
+                    Console.Clear();
+                    Main(null);
+
+                    break;
+
+                default:
+                    Main(null);
+                    break;
+
 
             }
 

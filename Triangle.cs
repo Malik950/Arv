@@ -16,7 +16,7 @@ namespace ConsoleApp4
         }
 
 
-        public override double Area()
+        public double Area()
         {
             double area = (width * height)/ 2;
 

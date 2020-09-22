@@ -9,12 +9,32 @@ namespace ConsoleApp4
 
     class Circle : IShape
     {
-        double width, height;
-        public Circle(double w, double h) 
+        double radie;
+
+        public Circle(double r)
         {
-            width = w;
-            height = h;
+            radie = r;
         }
 
+        public double Area()
+        {
+            double area = Math.PI * radie * radie;
+
+            return area;
+            
+        }
+
+        public double Omkrets()
+        {
+           double omkrets = Math.PI * (radie*2);
+
+            return omkrets;
+
+        }
+
+        
+       
+
+            
     }
 }
